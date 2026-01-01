@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubing Zhang | AI Researcher & Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">RZ</div>
+            <ul class="nav-menu">
+                <li><a href="#home" data-i18n="nav.home">Home</a></li>
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+                <li><a href="#education" data-i18n="nav.education">Education</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="zh">中</button>
+                <button class="lang-btn" data-lang="fr">FR</button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="gradient-text" data-i18n="hero.title">Rubing Zhang</span>
+                </h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">AI Researcher & Software Engineer</p>
+                <p class="hero-description" data-i18n="hero.description">
+                    Software-focused researcher in AI, Federated Learning, and Backend Systems.
+                    Expert in AI pipelines, RESTful backend design, microservices, and production-ready systems.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary" data-i18n="hero.buttonWork">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary" data-i18n="hero.buttonContact">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label" data-i18n="hero.statProjects">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label" data-i18n="hero.statLanguages">Languages</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="about.tag">About Me</span>
+                <h2 class="section-title" data-i18n="about.title">Professional Profile</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead-text" data-i18n="about.lead">
+                        I am a software-focused researcher with extensive expertise in artificial intelligence, 
+                        federated learning, and backend systems. My passion lies in building scalable, 
+                        production-ready solutions that solve real-world problems in healthcare and data-intensive domains.
+                    </p>
+                    <p data-i18n="about.text">
+                        With over two decades of experience, I've worked on cutting-edge AI pipelines, 
+                        designed robust RESTful backends, and architected microservices that power 
+                        mission-critical applications. I specialize in translating research into 
+                        practical, deployable systems.
+                    </p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <strong data-i18n="about.location">Location:</strong> Brossard, QC, Canada
+                        </div>
+                        <div class="contact-item">
+                            <strong data-i18n="about.email">Email:</strong> rb.zhang68@gmail.com
+                        </div>
+                        <div class="contact-item">
+                            <strong data-i18n="about.website">Website:</strong> 
+                            <a href="https://baisiyou.github.io/rubing/" target="_blank">baisiyou.github.io/rubing</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="skills.tag">Technical Expertise</span>
+                <h2 class="section-title" data-i18n="skills.title">Skills & Technologies</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-icon">🐍</div>
+                    <h3 data-i18n="skills.languagesML">Languages & ML</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">⚙️</div>
+                    <h3 data-i18n="skills.backendSystems">Backend & Systems</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Microservices</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">Celery</span>
+                        <span class="skill-tag">RabbitMQ</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">GitHub Actions</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">🤖</div>
+                    <h3 data-i18n="skills.mlNLP">ML & NLP</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">ClinicalBERT</span>
+                        <span class="skill-tag">XGBoost</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">Time-Series</span>
+                        <span class="skill-tag">RAG</span>
+                        <span class="skill-tag">NLP</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">☁️</div>
+                    <h3 data-i18n="skills.cloudTools">Cloud & Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">Google Cloud</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">GitLab</span>
+                    </div>
+                </div>
+            </div>
+            <div class="languages-section">
+                <h3 data-i18n="skills.languages">Languages</h3>
+                <div class="language-list">
+                    <div class="language-item">
+                        <span class="language-name" data-i18n="skills.chinese">Chinese</span>
+                        <span class="language-level" data-i18n="skills.native">Native</span>
+                    </div>
+                    <div class="language-item">
+                        <span class="language-name" data-i18n="skills.english">English</span>
+                        <span class="language-level" data-i18n="skills.fluent">Fluent</span>
+                    </div>
+                    <div class="language-item">
+                        <span class="language-name" data-i18n="skills.french">French</span>
+                        <span class="language-level" data-i18n="skills.beginner">Beginner</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="projects.tag">Portfolio</span>
+                <h2 class="section-title" data-i18n="projects.title">Selected Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image healthsync"></div>
+                    <div class="project-content">
+                        <div class="project-tag" data-i18n="projects.healthSync.tag">AI Healthcare</div>
+                        <h3 class="project-title" data-i18n="projects.healthSync.title">HealthSync AI</h3>
+                        <p class="project-description" data-i18n="projects.healthSync.description">
+                            AI-Powered Healthcare Diagnosis Platform combining NLP and ML for clinical decision support.
+                        </p>
+                        <ul class="project-features">
+                            <li data-i18n="projects.healthSync.features.0">ClinicalBERT for semantic extraction</li>
+                            <li data-i18n="projects.healthSync.features.1">XGBoost for structured risk scoring</li>
+                            <li data-i18n="projects.healthSync.features.2">RAG module for grounded outputs</li>
+                            <li data-i18n="projects.healthSync.features.3">Privacy-preserving deployment</li>
+                        </ul>
+                        <a href="https://baisiyou.github.io/health" target="_blank" class="project-link">
+                            <span data-i18n="projects.healthSync.link">View Project</span> <span>→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image logistics"></div>
+                    <div class="project-content">
+                        <div class="project-tag" data-i18n="projects.logistics.tag">Backend Systems</div>
+                        <h3 class="project-title" data-i18n="projects.logistics.title">Logistics Platform</h3>
+                        <p class="project-description" data-i18n="projects.logistics.description">
+                            High-performance backend for route optimization, shipment monitoring, and resource allocation.
+                        </p>
+                        <ul class="project-features">
+                            <li data-i18n="projects.logistics.features.0">RESTful Python microservices</li>
+                            <li data-i18n="projects.logistics.features.1">PostgreSQL + Redis architecture</li>
+                            <li data-i18n="projects.logistics.features.2">JWT and RBAC secured APIs</li>
+                            <li data-i18n="projects.logistics.features.3">Docker + CI/CD pipeline</li>
+                        </ul>
+                        <a href="https://baisiyou.github.io/logitics/" target="_blank" class="project-link">
+                            <span data-i18n="projects.logistics.link">View Project</span> <span>→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image voiceclone"></div>
+                    <div class="project-content">
+                        <div class="project-tag" data-i18n="projects.voiceClone.tag">Full-Stack AI</div>
+                        <h3 class="project-title" data-i18n="projects.voiceClone.title">Voice Clone AI Chat</h3>
+                        <p class="project-description" data-i18n="projects.voiceClone.description">
+                            Full-stack application with ElevenLabs voice cloning and Google Gemini conversational AI.
+                        </p>
+                        <ul class="project-features">
+                            <li data-i18n="projects.voiceClone.features.0">React frontend with voice management</li>
+                            <li data-i18n="projects.voiceClone.features.1">Real-time audio playback</li>
+                            <li data-i18n="projects.voiceClone.features.2">Node.js/Express backend</li>
+                            <li data-i18n="projects.voiceClone.features.3">Optimized UX with responsive design</li>
+                        </ul>
+                        <a href="https://baisiyou.github.io/clone/" target="_blank" class="project-link">
+                            <span data-i18n="projects.voiceClone.link">View Project</span> <span>→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image ink"></div>
+                    <div class="project-content">
+                        <div class="project-tag" data-i18n="projects.ink.tag">Corporate Website</div>
+                        <h3 class="project-title" data-i18n="projects.ink.title">Baisiyou Ink</h3>
+                        <p class="project-description" data-i18n="projects.ink.description">
+                            Multilingual, responsive SPA showcasing thermochromic microcapsule ink company.
+                        </p>
+                        <ul class="project-features">
+                            <li data-i18n="projects.ink.features.0">Multilingual support (i18n)</li>
+                            <li data-i18n="projects.ink.features.1">Smooth scrolling animations</li>
+                            <li data-i18n="projects.ink.features.2">Lazy-loading images</li>
+                            <li data-i18n="projects.ink.features.3">Interactive UI components</li>
+                        </ul>
+                        <a href="https://baisiyou.github.io/ink/" target="_blank" class="project-link">
+                            <span data-i18n="projects.ink.link">View Project</span> <span>→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="experience.tag">Career</span>
+                <h2 class="section-title" data-i18n="experience.title">Professional Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date" data-i18n="experience.fedDGL.date">Recent</div>
+                        <h3 class="timeline-title" data-i18n="experience.fedDGL.title">FedDGL – Defending Gradient Leakage in Federated Learning</h3>
+                        <p class="timeline-role" data-i18n="experience.fedDGL.role">Sole Researcher</p>
+                        <p class="timeline-description" data-i18n="experience.fedDGL.description">
+                            Developed Python framework for client-side data perturbation preventing gradient leakage. 
+                            Conducted experiments on eICU and MIMIC datasets, simulating DLG and Attribute Inference Attacks.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date" data-i18n="experience.visitingScholar.date">Academic</div>
+                        <h3 class="timeline-title" data-i18n="experience.visitingScholar.title">Visiting Scholar</h3>
+                        <p class="timeline-role" data-i18n="experience.visitingScholar.role">Queens University, Canada</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date" data-i18n="experience.seniorResearcher.date">Research</div>
+                        <h3 class="timeline-title" data-i18n="experience.seniorResearcher.title">Senior Researcher</h3>
+                        <p class="timeline-role" data-i18n="experience.seniorResearcher.role">McMaster University, Canada</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date" data-i18n="experience.associateProfessor.date">Teaching</div>
+                        <h3 class="timeline-title" data-i18n="experience.associateProfessor.title">Associate Professor</h3>
+                        <p class="timeline-role" data-i18n="experience.associateProfessor.role">Microelectronics, Shanghai Jiao Tong University, China</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date" data-i18n="experience.postdoc.date">Research</div>
+                        <h3 class="timeline-title" data-i18n="experience.postdoc.title">Postdoctoral Fellow</h3>
+                        <p class="timeline-role" data-i18n="experience.postdoc.role">Chinese Academy of Sciences, Shanghai, China</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date" data-i18n="experience.lecturer.date">Teaching</div>
+                        <h3 class="timeline-title" data-i18n="experience.lecturer.title">Lecturer</h3>
+                        <p class="timeline-role" data-i18n="experience.lecturer.role">Analytical Chemistry, Nanjing University of Science & Technology, China</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="education.tag">Academic Background</span>
+                <h2 class="section-title" data-i18n="education.title">Education</h2>
+            </div>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">💻</div>
+                    <h3 class="education-degree" data-i18n="education.cs.degree">Computer Science</h3>
+                    <p class="education-school" data-i18n="education.cs.school">Vanier College, Canada</p>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon">🎓</div>
+                    <h3 class="education-degree" data-i18n="education.phd.degree">Ph.D., Materials Science</h3>
+                    <p class="education-school" data-i18n="education.phd.school">Nanjing University of Science and Technology, China</p>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon">📚</div>
+                    <h3 class="education-degree" data-i18n="education.msc.degree">M.Sc., Physical Chemistry</h3>
+                    <p class="education-school" data-i18n="education.msc.school">Nanjing University of Science and Technology, China</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="contact.tag">Get In Touch</span>
+                <h2 class="section-title" data-i18n="contact.title">Let's Work Together</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info-section">
+                    <p class="contact-intro" data-i18n="contact.intro">
+                        I'm always open to discussing new opportunities, interesting projects, 
+                        or collaborating on innovative solutions. Feel free to reach out!
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4 data-i18n="contact.location">Location</h4>
+                                <p>4225 Rue de l'Oural, Brossard QC J4Y 0A3, Canada</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <h4 data-i18n="contact.email">Email</h4>
+                                <p>rb.zhang68@gmail.com</p>
+                                <p>baisiyou@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">📱</div>
+                            <div>
+                                <h4 data-i18n="contact.phone">Phone</h4>
+                                <p>+1-514-998-6168</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">🌐</div>
+                            <div>
+                                <h4 data-i18n="contact.website">Website</h4>
+                                <a href="https://baisiyou.github.io/rubing/" target="_blank">
+                                    baisiyou.github.io/rubing
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p data-i18n="footer.copyright">&copy; 2024 Rubing Zhang. All rights reserved.</p>
+                <p class="footer-tagline" data-i18n="footer.tagline">Building the future, one line of code at a time.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
