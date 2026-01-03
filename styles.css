@@ -194,6 +194,150 @@ body {
     text-align: center;
 }
 
+.hero-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.hero-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 1rem;
+}
+
+.hero-image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradient-hero);
+    border-radius: 30px;
+    opacity: 0.3;
+    filter: blur(20px);
+    z-index: -1;
+    animation: pulse 3s ease-in-out infinite;
+}
+
+.hero-image-container::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    border-radius: 30px;
+    opacity: 0.2;
+    z-index: -2;
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.3;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.5;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 
+        0 20px 60px rgba(102, 126, 234, 0.4),
+        0 0 0 4px rgba(255, 255, 255, 0.1),
+        inset 0 0 60px rgba(102, 126, 234, 0.1);
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: fadeInUp 1s ease 0.3s both, float 6s ease-in-out infinite 1.5s;
+    position: relative;
+    z-index: 1;
+    filter: 
+        brightness(1.05) 
+        contrast(1.1) 
+        saturate(1.2)
+        drop-shadow(0 10px 30px rgba(102, 126, 234, 0.3));
+    object-fit: cover;
+    aspect-ratio: 1;
+}
+
+.hero-image:hover {
+    transform: scale(1.08) translateY(-10px);
+    filter: 
+        brightness(1.1) 
+        contrast(1.15) 
+        saturate(1.3)
+        drop-shadow(0 20px 40px rgba(102, 126, 234, 0.5));
+    box-shadow: 
+        0 30px 80px rgba(102, 126, 234, 0.5),
+        0 0 0 6px rgba(255, 255, 255, 0.15),
+        inset 0 0 80px rgba(102, 126, 234, 0.2);
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* 添加装饰性光晕效果 */
+.hero-image-container::before {
+    animation: pulse 3s ease-in-out infinite, glow 4s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(102, 126, 234, 0.6);
+    }
+}
+
+@media (max-width: 968px) {
+    .hero-wrapper {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .hero-image {
+        max-width: 300px;
+    }
+    
+    .hero-text {
+        text-align: center;
+    }
+    
+    .hero-image-container::before,
+    .hero-image-container::after {
+        filter: blur(15px);
+    }
+}
+
 .hero-title {
     font-family: 'Playfair Display', serif;
     font-size: clamp(3rem, 8vw, 6rem);
@@ -546,6 +690,14 @@ section {
     overflow: hidden;
 }
 
+.project-image.cdss {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+}
+
+.project-image.whiteboard {
+    background: linear-gradient(135deg, #8e2de2 0%, #4a00e0 100%);
+}
+
 .project-image.healthsync {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
@@ -609,6 +761,13 @@ section {
     font-weight: bold;
 }
 
+.project-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
 .project-link {
     display: inline-flex;
     align-items: center;
@@ -630,6 +789,15 @@ section {
 
 .project-link:hover span {
     transform: translateX(5px);
+}
+
+.project-link.github-link {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.project-link.github-link:hover {
+    color: var(--text-secondary);
 }
 
 /* Experience Section */

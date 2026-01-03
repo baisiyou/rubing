@@ -40,18 +40,23 @@
     <section id="home" class="hero">
         <div class="hero-background"></div>
         <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    <span class="gradient-text" data-i18n="hero.title">Rubing Zhang</span>
-                </h1>
-                <p class="hero-subtitle" data-i18n="hero.subtitle">AI Researcher & Software Engineer</p>
-                <p class="hero-description" data-i18n="hero.description">
-                    Software-focused researcher in AI, Federated Learning, and Backend Systems.
-                    Expert in AI pipelines, RESTful backend design, microservices, and production-ready systems.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary" data-i18n="hero.buttonWork">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary" data-i18n="hero.buttonContact">Get In Touch</a>
+            <div class="hero-wrapper">
+                <div class="hero-image-container">
+                    <img src="picture.JPG" alt="Rubing Zhang" class="hero-image">
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="gradient-text" data-i18n="hero.title">Rubing Zhang</span>
+                    </h1>
+                    <p class="hero-subtitle" data-i18n="hero.subtitle">AI Researcher & Software Engineer</p>
+                    <p class="hero-description" data-i18n="hero.description">
+                        Software-focused researcher in AI, Federated Learning, and Backend Systems.
+                        Expert in AI pipelines, RESTful backend design, microservices, and production-ready systems.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary" data-i18n="hero.buttonWork">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary" data-i18n="hero.buttonContact">Get In Touch</a>
+                    </div>
                 </div>
             </div>
             <div class="hero-stats">
@@ -201,22 +206,52 @@
             </div>
             <div class="projects-grid">
                 <div class="project-card">
+                    <div class="project-image cdss"></div>
+                    <div class="project-content">
+                        <div class="project-tag" data-i18n="projects.cdss.tag">ML Healthcare</div>
+                        <h3 class="project-title" data-i18n="projects.cdss.title">Clinical Decision Support System (CDSS)</h3>
+                        <p class="project-description" data-i18n="projects.cdss.description">
+                            Machine Learning-based Clinical Decision Support System for predicting drug-induced organ dysfunction and warning high-risk drug interactions.
+                        </p>
+                        <ul class="project-features">
+                            <li data-i18n="projects.cdss.features.0">RESTful APIs for prediction and warning services</li>
+                            <li data-i18n="projects.cdss.features.1">Web-based multilingual interface (Chinese/English/French)</li>
+                            <li data-i18n="projects.cdss.features.2">Model training pipeline with feature engineering</li>
+                            <li data-i18n="projects.cdss.features.3">Python, Flask, scikit-learn (Random Forest), Gunicorn, Render</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://baisiyou.github.io/CDSS/" target="_blank" class="project-link">
+                                <span data-i18n="projects.cdss.link">Live Demo</span> <span>→</span>
+                            </a>
+                            <a href="https://github.com/baisiyou/CDSS" target="_blank" class="project-link github-link">
+                                <span>GitHub</span> <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
                     <div class="project-image healthsync"></div>
                     <div class="project-content">
                         <div class="project-tag" data-i18n="projects.healthSync.tag">AI Healthcare</div>
                         <h3 class="project-title" data-i18n="projects.healthSync.title">HealthSync AI</h3>
                         <p class="project-description" data-i18n="projects.healthSync.description">
-                            AI-Powered Healthcare Diagnosis Platform combining NLP and ML for clinical decision support.
+                            Multi-model AI pipeline combining NLP and ML for clinical decision support.
                         </p>
                         <ul class="project-features">
                             <li data-i18n="projects.healthSync.features.0">ClinicalBERT for semantic extraction</li>
                             <li data-i18n="projects.healthSync.features.1">XGBoost for structured risk scoring</li>
                             <li data-i18n="projects.healthSync.features.2">RAG module for grounded outputs</li>
-                            <li data-i18n="projects.healthSync.features.3">Privacy-preserving deployment</li>
+                            <li data-i18n="projects.healthSync.features.3">Modular, production-ready Python inference services</li>
                         </ul>
-                        <a href="https://baisiyou.github.io/health" target="_blank" class="project-link">
-                            <span data-i18n="projects.healthSync.link">View Project</span> <span>→</span>
-                        </a>
+                        <div class="project-links">
+                            <a href="https://baisiyou.github.io/health" target="_blank" class="project-link">
+                                <span data-i18n="projects.healthSync.link">Live Demo</span> <span>→</span>
+                            </a>
+                            <a href="https://github.com/baisiyou/health" target="_blank" class="project-link github-link">
+                                <span>GitHub</span> <span>→</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -229,14 +264,19 @@
                             High-performance backend for route optimization, shipment monitoring, and resource allocation.
                         </p>
                         <ul class="project-features">
-                            <li data-i18n="projects.logistics.features.0">RESTful Python microservices</li>
-                            <li data-i18n="projects.logistics.features.1">PostgreSQL + Redis architecture</li>
+                            <li data-i18n="projects.logistics.features.0">RESTful Python microservices (Flask/FastAPI)</li>
+                            <li data-i18n="projects.logistics.features.1">PostgreSQL + Redis; asynchronous Celery/RabbitMQ</li>
                             <li data-i18n="projects.logistics.features.2">JWT and RBAC secured APIs</li>
-                            <li data-i18n="projects.logistics.features.3">Docker + CI/CD pipeline</li>
+                            <li data-i18n="projects.logistics.features.3">Docker + GitHub Actions CI/CD</li>
                         </ul>
-                        <a href="https://baisiyou.github.io/logitics/" target="_blank" class="project-link">
-                            <span data-i18n="projects.logistics.link">View Project</span> <span>→</span>
-                        </a>
+                        <div class="project-links">
+                            <a href="https://baisiyou.github.io/logitics/" target="_blank" class="project-link">
+                                <span data-i18n="projects.logistics.link">Live Demo</span> <span>→</span>
+                            </a>
+                            <a href="https://github.com/baisiyou/logitics" target="_blank" class="project-link github-link">
+                                <span>GitHub</span> <span>→</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -249,14 +289,19 @@
                             Full-stack application with ElevenLabs voice cloning and Google Gemini conversational AI.
                         </p>
                         <ul class="project-features">
-                            <li data-i18n="projects.voiceClone.features.0">React frontend with voice management</li>
-                            <li data-i18n="projects.voiceClone.features.1">Real-time audio playback</li>
-                            <li data-i18n="projects.voiceClone.features.2">Node.js/Express backend</li>
-                            <li data-i18n="projects.voiceClone.features.3">Optimized UX with responsive design</li>
+                            <li data-i18n="projects.voiceClone.features.0">React frontend: dynamic voice management, text/voice chat</li>
+                            <li data-i18n="projects.voiceClone.features.1">Web APIs (MediaRecorder, Audio) for recording/playback</li>
+                            <li data-i18n="projects.voiceClone.features.2">Node.js/Express backend integrating voice cloning securely</li>
+                            <li data-i18n="projects.voiceClone.features.3">Optimized UX with loading indicators, responsive UI</li>
                         </ul>
-                        <a href="https://baisiyou.github.io/clone/" target="_blank" class="project-link">
-                            <span data-i18n="projects.voiceClone.link">View Project</span> <span>→</span>
-                        </a>
+                        <div class="project-links">
+                            <a href="https://baisiyou.github.io/clone/" target="_blank" class="project-link">
+                                <span data-i18n="projects.voiceClone.link">Live Demo</span> <span>→</span>
+                            </a>
+                            <a href="https://github.com/baisiyou/clone" target="_blank" class="project-link github-link">
+                                <span>GitHub</span> <span>→</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -272,11 +317,38 @@
                             <li data-i18n="projects.ink.features.0">Multilingual support (i18n)</li>
                             <li data-i18n="projects.ink.features.1">Smooth scrolling animations</li>
                             <li data-i18n="projects.ink.features.2">Lazy-loading images</li>
-                            <li data-i18n="projects.ink.features.3">Interactive UI components</li>
+                            <li data-i18n="projects.ink.features.3">Modular front-end code; deployed on GitHub Pages</li>
                         </ul>
-                        <a href="https://baisiyou.github.io/ink/" target="_blank" class="project-link">
-                            <span data-i18n="projects.ink.link">View Project</span> <span>→</span>
-                        </a>
+                        <div class="project-links">
+                            <a href="https://baisiyou.github.io/ink/" target="_blank" class="project-link">
+                                <span data-i18n="projects.ink.link">Live Demo</span> <span>→</span>
+                            </a>
+                            <a href="https://github.com/baisiyou/ink" target="_blank" class="project-link github-link">
+                                <span>GitHub</span> <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image whiteboard"></div>
+                    <div class="project-content">
+                        <div class="project-tag" data-i18n="projects.whiteboard.tag">Collaborative Web App</div>
+                        <h3 class="project-title" data-i18n="projects.whiteboard.title">Collaborative Hand-Drawn Whiteboard</h3>
+                        <p class="project-description" data-i18n="projects.whiteboard.description">
+                            Real-time collaborative whiteboard with hand-drawn style rendering, infinite canvas, and end-to-end encryption.
+                        </p>
+                        <ul class="project-features">
+                            <li data-i18n="projects.whiteboard.features.0">Shape libraries, arrow binding, image support, undo/redo</li>
+                            <li data-i18n="projects.whiteboard.features.1">Export to PNG/SVG/clipboard</li>
+                            <li data-i18n="projects.whiteboard.features.2">Offline-first PWA with local autosave, dark mode, i18n</li>
+                            <li data-i18n="projects.whiteboard.features.3">Mobile-optimized: responsive, full touch support, installable</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/baisiyou/draw" target="_blank" class="project-link github-link">
+                                <span>GitHub</span> <span>→</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

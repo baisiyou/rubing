@@ -46,41 +46,65 @@ const translations = {
         projects: {
             tag: "Portfolio",
             title: "Selected Projects",
+            cdss: {
+                tag: "ML Healthcare",
+                title: "Clinical Decision Support System (CDSS)",
+                description: "Machine Learning-based Clinical Decision Support System for predicting drug-induced organ dysfunction and warning high-risk drug interactions.",
+                features: [
+                    "RESTful APIs for prediction and warning services",
+                    "Web-based multilingual interface (Chinese/English/French)",
+                    "Model training pipeline with feature engineering",
+                    "Python, Flask, scikit-learn (Random Forest), Gunicorn, Render"
+                ],
+                link: "Live Demo"
+            },
+            whiteboard: {
+                tag: "Collaborative Web App",
+                title: "Collaborative Hand-Drawn Whiteboard",
+                description: "Real-time collaborative whiteboard with hand-drawn style rendering, infinite canvas, and end-to-end encryption.",
+                features: [
+                    "Shape libraries, arrow binding, image support, undo/redo",
+                    "Export to PNG/SVG/clipboard",
+                    "Offline-first PWA with local autosave, dark mode, i18n",
+                    "Mobile-optimized: responsive, full touch support, installable"
+                ],
+                link: "GitHub"
+            },
             healthSync: {
                 tag: "AI Healthcare",
                 title: "HealthSync AI",
-                description: "AI-Powered Healthcare Diagnosis Platform combining NLP and ML for clinical decision support.",
+                description: "Multi-model AI pipeline combining NLP and ML for clinical decision support.",
                 features: [
                     "ClinicalBERT for semantic extraction",
                     "XGBoost for structured risk scoring",
                     "RAG module for grounded outputs",
-                    "Privacy-preserving deployment"
+                    "Modular, production-ready Python inference services"
                 ],
-                link: "View Project"
+                link: "Live Demo"
             },
             logistics: {
                 tag: "Backend Systems",
                 title: "Logistics Platform",
                 description: "High-performance backend for route optimization, shipment monitoring, and resource allocation.",
                 features: [
-                    "RESTful Python microservices",
-                    "PostgreSQL + Redis architecture",
+                    "RESTful Python microservices (Flask/FastAPI)",
+                    "PostgreSQL + Redis; asynchronous Celery/RabbitMQ",
                     "JWT and RBAC secured APIs",
-                    "Docker + CI/CD pipeline"
+                    "Docker + GitHub Actions CI/CD"
                 ],
-                link: "View Project"
+                link: "Live Demo"
             },
             voiceClone: {
                 tag: "Full-Stack AI",
                 title: "Voice Clone AI Chat",
                 description: "Full-stack application with ElevenLabs voice cloning and Google Gemini conversational AI.",
                 features: [
-                    "React frontend with voice management",
-                    "Real-time audio playback",
-                    "Node.js/Express backend",
-                    "Optimized UX with responsive design"
+                    "React frontend: dynamic voice management, text/voice chat",
+                    "Web APIs (MediaRecorder, Audio) for recording/playback",
+                    "Node.js/Express backend integrating voice cloning securely",
+                    "Optimized UX with loading indicators, responsive UI"
                 ],
-                link: "View Project"
+                link: "Live Demo"
             },
             ink: {
                 tag: "Corporate Website",
@@ -90,9 +114,9 @@ const translations = {
                     "Multilingual support (i18n)",
                     "Smooth scrolling animations",
                     "Lazy-loading images",
-                    "Interactive UI components"
+                    "Modular front-end code; deployed on GitHub Pages"
                 ],
-                link: "View Project"
+                link: "Live Demo"
             }
         },
         experience: {
@@ -206,41 +230,65 @@ const translations = {
         projects: {
             tag: "作品集",
             title: "精选项目",
+            cdss: {
+                tag: "机器学习医疗",
+                title: "临床决策支持系统 (CDSS)",
+                description: "基于机器学习的临床决策支持系统，用于预测药物引起的器官功能障碍并警告高风险药物相互作用。",
+                features: [
+                    "用于预测和警告服务的RESTful API",
+                    "基于Web的多语言界面（中文/英文/法文）",
+                    "具有特征工程的模型训练流水线",
+                    "Python, Flask, scikit-learn (Random Forest), Gunicorn, Render"
+                ],
+                link: "在线演示"
+            },
+            whiteboard: {
+                tag: "协作Web应用",
+                title: "协作手绘白板",
+                description: "实时协作白板，具有手绘风格渲染、无限画布和端到端加密。",
+                features: [
+                    "形状库、箭头绑定、图片支持、撤销/重做",
+                    "导出为PNG/SVG/剪贴板",
+                    "离线优先PWA，本地自动保存、暗色模式、国际化",
+                    "移动端优化：响应式、完整触摸支持、可安装"
+                ],
+                link: "GitHub"
+            },
             healthSync: {
                 tag: "AI医疗",
                 title: "HealthSync AI",
-                description: "AI驱动的医疗诊断平台，结合NLP和ML进行临床决策支持。",
+                description: "结合NLP和ML进行临床决策支持的多模型AI流水线。",
                 features: [
                     "ClinicalBERT用于语义提取",
                     "XGBoost用于结构化风险评估",
                     "RAG模块用于基于文献的输出",
-                    "隐私保护的部署"
+                    "模块化、生产级Python推理服务"
                 ],
-                link: "查看项目"
+                link: "在线演示"
             },
             logistics: {
                 tag: "后端系统",
                 title: "物流平台",
                 description: "用于路线优化、货物监控和资源分配的高性能后端系统。",
                 features: [
-                    "RESTful Python微服务",
-                    "PostgreSQL + Redis架构",
+                    "RESTful Python微服务 (Flask/FastAPI)",
+                    "PostgreSQL + Redis; 异步Celery/RabbitMQ",
                     "JWT和RBAC安全API",
-                    "Docker + CI/CD流水线"
+                    "Docker + GitHub Actions CI/CD"
                 ],
-                link: "查看项目"
+                link: "在线演示"
             },
             voiceClone: {
                 tag: "全栈AI",
                 title: "语音克隆AI聊天",
                 description: "全栈应用，集成ElevenLabs语音克隆和Google Gemini对话AI。",
                 features: [
-                    "React前端语音管理",
-                    "实时音频播放",
-                    "Node.js/Express后端",
-                    "优化的响应式设计用户体验"
+                    "React前端：动态语音管理，文本/语音聊天",
+                    "Web API (MediaRecorder, Audio) 用于录制/播放",
+                    "Node.js/Express后端安全集成语音克隆",
+                    "优化的用户体验，带加载指示器，响应式UI"
                 ],
-                link: "查看项目"
+                link: "在线演示"
             },
             ink: {
                 tag: "企业网站",
@@ -250,9 +298,9 @@ const translations = {
                     "多语言支持（i18n）",
                     "流畅滚动动画",
                     "图片懒加载",
-                    "交互式UI组件"
+                    "模块化前端代码；部署在GitHub Pages"
                 ],
-                link: "查看项目"
+                link: "在线演示"
             }
         },
         experience: {
@@ -366,41 +414,65 @@ const translations = {
         projects: {
             tag: "Portfolio",
             title: "Projets sélectionnés",
+            cdss: {
+                tag: "ML Santé",
+                title: "Système d'aide à la décision clinique (CDSS)",
+                description: "Système d'aide à la décision clinique basé sur l'apprentissage automatique pour prédire les dysfonctionnements d'organes induits par les médicaments et avertir des interactions médicamenteuses à haut risque.",
+                features: [
+                    "APIs RESTful pour les services de prédiction et d'avertissement",
+                    "Interface Web multilingue (Chinois/Anglais/Français)",
+                    "Pipeline d'entraînement de modèle avec ingénierie de caractéristiques",
+                    "Python, Flask, scikit-learn (Random Forest), Gunicorn, Render"
+                ],
+                link: "Démo en direct"
+            },
+            whiteboard: {
+                tag: "Application Web collaborative",
+                title: "Tableau blanc collaboratif dessiné à la main",
+                description: "Tableau blanc collaboratif en temps réel avec rendu de style dessiné à la main, toile infinie et chiffrement de bout en bout.",
+                features: [
+                    "Bibliothèques de formes, liaison de flèches, support d'images, annuler/rétablir",
+                    "Export vers PNG/SVG/presse-papiers",
+                    "PWA hors ligne avec sauvegarde automatique locale, mode sombre, i18n",
+                    "Optimisé mobile : réactif, support tactile complet, installable"
+                ],
+                link: "GitHub"
+            },
             healthSync: {
                 tag: "IA Santé",
                 title: "HealthSync AI",
-                description: "Plateforme de diagnostic de santé alimentée par l'IA combinant NLP et ML pour le support de décision clinique.",
+                description: "Pipeline IA multi-modèle combinant NLP et ML pour le support de décision clinique.",
                 features: [
                     "ClinicalBERT pour l'extraction sémantique",
                     "XGBoost pour le scoring de risque structuré",
                     "Module RAG pour des sorties fondées",
-                    "Déploiement préservant la confidentialité"
+                    "Services d'inférence Python modulaires et prêts pour la production"
                 ],
-                link: "Voir le projet"
+                link: "Démo en direct"
             },
             logistics: {
                 tag: "Systèmes backend",
                 title: "Plateforme logistique",
                 description: "Backend haute performance pour l'optimisation d'itinéraires, la surveillance d'expédition et l'allocation de ressources.",
                 features: [
-                    "Microservices Python RESTful",
-                    "Architecture PostgreSQL + Redis",
+                    "Microservices Python RESTful (Flask/FastAPI)",
+                    "PostgreSQL + Redis; Celery/RabbitMQ asynchrone",
                     "APIs sécurisées JWT et RBAC",
-                    "Pipeline Docker + CI/CD"
+                    "Docker + GitHub Actions CI/CD"
                 ],
-                link: "Voir le projet"
+                link: "Démo en direct"
             },
             voiceClone: {
                 tag: "IA Full-Stack",
                 title: "Chat IA Clone Vocal",
                 description: "Application full-stack avec clonage vocal ElevenLabs et IA conversationnelle Google Gemini.",
                 features: [
-                    "Frontend React avec gestion vocale",
-                    "Lecture audio en temps réel",
-                    "Backend Node.js/Express",
-                    "UX optimisée avec design réactif"
+                    "Frontend React : gestion vocale dynamique, chat texte/vocal",
+                    "APIs Web (MediaRecorder, Audio) pour enregistrement/lecture",
+                    "Backend Node.js/Express intégrant le clonage vocal de manière sécurisée",
+                    "UX optimisée avec indicateurs de chargement, UI réactive"
                 ],
-                link: "Voir le projet"
+                link: "Démo en direct"
             },
             ink: {
                 tag: "Site d'entreprise",
@@ -410,9 +482,9 @@ const translations = {
                     "Support multilingue (i18n)",
                     "Animations de défilement fluides",
                     "Images à chargement différé",
-                    "Composants UI interactifs"
+                    "Code front-end modulaire; déployé sur GitHub Pages"
                 ],
-                link: "Voir le projet"
+                link: "Démo en direct"
             }
         },
         experience: {

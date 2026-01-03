@@ -1,0 +1,55 @@
+Rubing Zhang
+4225 Rue de l’Oural, Brossard QC J4Y 0A3
+Tel: +1-514-998-6168 Email: rb.zhang68@gmail.com, baisiyou@gmail.com
+Website: https://baisiyou.github.io/rubing/
+Professional Profile
+Software-focused researcher in AI, Federated Learning, and Backend Systems. Expert in AI pipelines,
+RESTful backend design, microservices, and production-ready systems. Seeking Software/Backend Engineer roles
+in data-intensive or healthcare domains.
+Technical Skills
+Languages/ML: Python (PyTorch, TensorFlow, Scikit-learn, Pandas, NumPy), Node.js, React, Vanilla JS
+Backend/Systems: REST APIs, Microservices, PostgreSQL, Redis, Celery/RabbitMQ, Docker, CI/CD, GitHub
+Actions
+ML/NLP: ClinicalBERT, XGBoost, Deep Learning, Time-Series Analysis, RAG
+Cloud/Tools: AWS, Azure, Google Cloud, Git, GitHub, GitLab
+Languages: Chinese (Native), English (Fluent), French (Beginner)
+Selected Projects
+HealthSync AI – AI-Powered Healthcare Diagnosis Platform
+https://baisiyou.github.io/health
+• Multi-model AI pipeline combining NLP and ML for clinical decision support.
+• ClinicalBERT for semantic extraction; XGBoost for structured risk scoring.
+• RAG module for grounded outputs in literature and guidelines.
+• Modular, production-ready Python inference services enabling privacy-preserving deployment.
+Logitics – Logistics Optimization & Management Platform
+https://baisiyou.github.io/logitics/
+• High-performance backend for route optimization, shipment monitoring, and resource allocation.
+• RESTful Python microservices (Flask/FastAPI), modular, scalable.
+• PostgreSQL + Redis; asynchronous Celery/RabbitMQ; JWT and RBAC secured APIs.
+• Docker + GitHub Actions CI/CD for automated testing and deployment.
+Voice Clone AI Chat Application – Full-Stack Web Application
+https://baisiyou.github.io/clone/
+• Full-stack app: ElevenLabs voice cloning + Google Gemini conversational AI.
+• React frontend: dynamic voice management, text/voice chat, real-time audio playback.
+• Web APIs (MediaRecorder, Audio) for recording/playback; Axios REST calls.
+• Node.js/Express backend integrating voice cloning and chat services securely.
+• Optimized UX with loading indicators, responsive UI, production-ready builds.
+Baisiyou Ink – Corporate Website
+https://baisiyou.github.io/ink/
+• Multilingual, responsive SPA showcasing thermochromic microcapsule ink company.
+• Smooth scrolling, i18n, lazy-loading images, interactive animations.
+• Modular front-end code; deployed on GitHub Pages.
+Professional Experience
+FedDGL – Defending Gradient Leakage in Federated Learning
+https://https://drive.google.com/file/d/1PqIMDf07t7QRRryHIEueBhulBnBTRcaz/view Sole Researcher;
+Python framework for client-side data perturbation preventing gradient leakage; experiments on eICU and MIMIC
+datasets; simulated DLG and Attribute Inference Attacks.
+Visiting Scholar – Queens University, Canada
+Senior Researcher – McMaster University, Canada
+Associate Professor – Microelectronics, Shanghai Jiao Tong University, China
+Postdoctoral Fellow – Chinese Academy of Sciences, Shanghai, China
+Lecturer – Analytical Chemistry, Nanjing University of Science & Technology, China
+1
+Education
+• Computer Science, Vanier College, Canada
+• Ph.D., Materials Science – Nanjing University of Science and Technology, China
+• M.Sc., Physical Chemistry – Nanjing University of Science and Technology, China
